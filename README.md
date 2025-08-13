@@ -23,7 +23,7 @@ docker build -t amazonq-mcp .
 Run the container interactively, mounting a host folder for generated diagrams:
 
 ```bash
-docker run -it --rm -v "$(pwd)/diagram:/workspace/q/generated-diagrams" amazonq-mcp
+docker run -it --rm -v "$(pwd)/diagram:/workspace/generated-diagrams" amazonq-mcp
 ```
 
 **Explanation:**
