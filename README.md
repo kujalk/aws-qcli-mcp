@@ -1,4 +1,4 @@
-# Amazon Q CLI with AWS Diagram & Documentation MCP Servers (Dockerized)
+# Dockerized Amazon Q CLI with AWS Diagram & Documentation MCP Servers
 
 This repository provides a Dockerized setup for running **Amazon Q CLI** along with:
 - **AWS Diagram MCP Server** (`awslabs.aws-diagram-mcp-server`)
@@ -23,7 +23,7 @@ docker build -t amazonq-mcp .
 Run the container interactively, mounting a host folder for generated diagrams:
 
 ```bash
-docker run -it --rm     -v "$(pwd)/diagram:/workspace/q/generated-diagrams"     -v "$HOME/.aws:/root/.aws"     amazonq-mcp
+docker run -it --rm -v "$(pwd)/diagram:/workspace/q/generated-diagrams" amazonq-mcp
 ```
 
 **Explanation:**
